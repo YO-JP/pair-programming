@@ -1,0 +1,11 @@
+.main{
+    &__div{
+        display:flex;
+        justify-content: space-evenly;
+        width:100%;
+    }
+    &__divTwo{
+        display:flex;
+        justify-content: center;
+    }
+}

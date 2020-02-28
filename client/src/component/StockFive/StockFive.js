@@ -1,24 +1,26 @@
 import React, { Component } from 'react'
 
-import './StockOne.scss'
+import './StockFive.scss'
 
-export class StockOne extends Component{
+export class StockFive extends Component{
     state ={
         visible:false
     }
     render(){
-        if ( this.props.stockOne.length === 0 ) {
+        if ( this.props.stockFive.length === 0 ) {
             return null
         }
-        const Len = this.props.stockOne.length-1;
+        const Len = this.props.stockFive.length-1;
         console.log(Len)
         return(
 
             <section className="stock_container">
-            <h2>STOCK A</h2>
+            <h2>STOCK E</h2>
+            <h5>Industry:Finance</h5>
+            <p>Insert text here.</p>
             <form onSubmit={this.props.onSubmit}> 
-             <p>{this.props.stockOne[111].date}</p>
-             <p>{this.props.stockOne[111].close}</p>
+             <p>{this.props.stockFive[111].date}</p>
+             <p>{this.props.stockFive[111].close}</p>
              <button type="submit">BUY</button>
             </form>
             <h5>TODAY</h5>
@@ -27,8 +29,8 @@ export class StockOne extends Component{
                 }}>CLICK ME!</button>
                 {this.state.visible ? 
                     <>
-                    <p>{this.props.stockOne[Len].date}</p>
-                    <p>{this.props.stockOne[Len].close}</p>
+                    <p>{this.props.stockFive[Len].date}</p>
+                    <p>{this.props.stockFive[Len].close}</p>
                     </>
                     : null}
             <button onClick={this.props.handleAlternate}>SELL</button>
@@ -37,4 +39,4 @@ export class StockOne extends Component{
         
         )
 }}
-export default StockOne
+export default StockFive
