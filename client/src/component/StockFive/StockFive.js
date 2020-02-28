@@ -22,6 +22,8 @@ export class StockFive extends Component{
              <p>{this.props.stockFive[111].date}</p>
              <p>{this.props.stockFive[111].close}</p>
              <button type="submit">BUY</button>
+             <p>Count</p>
+             <p>{this.props.countFive}</p>
             </form>
             <h5>TODAY</h5>
             <button className = "stock__button" onClick={()=>{

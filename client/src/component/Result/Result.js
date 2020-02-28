@@ -11,7 +11,6 @@ class Result extends React.Component {
                 <p>{Math.floor(this.props.profit)}</p>
                 <h4>Cash</h4>
                 <p>{Math.floor(this.props.cash)}</p>
-
                 </div>
             </div>
         )
