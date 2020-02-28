@@ -1,10 +1,13 @@
 
 .chart{
+    text-align: center;
 
     &__button{
-        background-color: black;
+        background-color:#00203FFF;
+        border-color: goldenrod;
         color:white;
         width: 5rem;
         height: 2rem;
+        display: inline-block;
     }
 }

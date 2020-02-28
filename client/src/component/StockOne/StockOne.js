@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './StockOne.scss';
 
 import './StockOne.scss'
 
