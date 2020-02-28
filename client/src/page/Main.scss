@@ -1,11 +1,11 @@
-.main{
-    &__section{
-        background-color: #ADEFD1FF;
-    }
-}
 
-h1{
-    color:#00203FFF;
+@import'../Styles/_mixin';
+@import'../Styles/_variables';
+
+.main{
+    display: flex;
+    background-color: $green;
+    color:$blue;
     &__div{
         display:flex;
         justify-content: space-evenly;

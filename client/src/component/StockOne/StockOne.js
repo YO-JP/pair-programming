@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './StockOne.scss';
 
-import './StockOne.scss'
-
 export class StockOne extends Component{
     state ={
         visible:false
@@ -17,6 +15,8 @@ export class StockOne extends Component{
 
             <section className="stock_container">
             <h2>STOCK A</h2>
+            <h5>Industry:Technology</h5>
+            <p>1990 released new operating system that sold over 100,000 copies in two weeks.</p>
             <form onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockOne[111].date}</p>
              <p>{this.props.stockOne[111].close}</p>

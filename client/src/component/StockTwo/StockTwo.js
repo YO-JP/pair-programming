@@ -16,6 +16,8 @@ export class StockTwo extends Component{
 
             <section className="stock_container">
             <h2>STOCK B</h2>
+            <h5>Industry:pharmaceutical</h5>
+            <p>This pharmaceutical and life sciences company came out with an anti-depressant in 1992.</p>
             <form onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockTwo[111].date}</p>
              <p>{this.props.stockTwo[111].close}</p>

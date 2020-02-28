@@ -16,6 +16,8 @@ export class StockFour extends Component{
 
             <section className="stock_container">
             <h2>STOCK D</h2>
+            <h5>Industry:Petrochemicals</h5>
+            <p> The Oil Polluting Act of 1990 was  created due to this company's negligence.</p>
             <form onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockFour[111].date}</p>
              <p>{this.props.stockFour[111].close}</p>

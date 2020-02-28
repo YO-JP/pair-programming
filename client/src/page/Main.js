@@ -81,12 +81,6 @@ class Main extends React.Component {
     render() {
         console.log(this.state.stockOne)
         return (
-<<<<<<< HEAD
-            <section className='main__section'>
-                <StockOne stockOne={this.state.stockOne}/>
-                <Chart />
-            </section>
-=======
             <>
                 <Chart />
                 <div className = "main__div">
@@ -100,7 +94,6 @@ class Main extends React.Component {
                 <Result profit={this.state.Profit} cash={this.state.Cash}/>
                 </div>
             </>
->>>>>>> 16f762c89eb18fb0db86cb524ce932ebb7c3e773
         )
     }
 }

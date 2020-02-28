@@ -17,6 +17,8 @@ export class StockThree extends Component{
 
             <section className="stock_container">
             <h2>STOCK C</h2>
+            <h5>Industry:Appearl</h5>
+            <p>This clothing company has been credited with fueling the turtle neck craze of the late 80's/early 90's.</p>
             <form onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockThree[111].date}</p>
              <p>{this.props.stockThree[111].close}</p>

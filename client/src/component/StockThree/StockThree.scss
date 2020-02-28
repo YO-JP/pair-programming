@@ -1,6 +1,8 @@
 .stock{
     &__container{
         display:flex;
-        flex-direction:column
+        flex-direction:column;
+        flex: 0 0 18%;
+    
     }
 }

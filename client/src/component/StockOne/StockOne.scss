@@ -1,8 +1,11 @@
-.stock__wrapper{
-    background-color: #ADEFD1FF;
+
+
 .stock{
     &__container{
         display:flex;
-        flex-direction:column
+        flex-direction:column;
+        background-color: #ADEFD1FF;
+        flex: 0 0 18%
+    
     }
 }

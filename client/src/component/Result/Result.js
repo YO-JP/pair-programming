@@ -8,9 +8,10 @@ class Result extends React.Component {
                 <h2>RESULT...</h2>
                 <div className="result__div">
                 <h4>Profit</h4>
-                <p>{this.props.profit}</p>
+                <p>{Math.floor(this.props.profit)}</p>
                 <h4>Cash</h4>
-                <p>{this.props.cash}</p>
+                <p>{Math.floor(this.props.cash)}</p>
+
                 </div>
             </div>
         )

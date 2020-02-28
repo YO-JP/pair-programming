@@ -17,7 +17,7 @@ export class StockFive extends Component{
             <section className="stock_container">
             <h2>STOCK E</h2>
             <h5>Industry:Finance</h5>
-            <p>Insert text here.</p>
+            <p>In 1992 this financial company acquired  Security Pacific Corporation which was the largest bank acquisition in history..</p>
             <form onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockFive[111].date}</p>
              <p>{this.props.stockFive[111].close}</p>
