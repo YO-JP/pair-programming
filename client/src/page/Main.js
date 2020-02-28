@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import StockOne from '.././component/StockOne/StockOne.js'
 import Chart from '.././component/Chart/Chart.js'
+import './Main.scss';
 
 
 
@@ -28,10 +29,10 @@ class Main extends React.Component {
 
     render() {
         return (
-            <>
-                <Chart />
+            <section className='main__section'>
                 <StockOne stockOne={this.state.stockOne}/>
-            </>
+                <Chart />
+            </section>
         )
     }
 }

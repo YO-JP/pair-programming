@@ -3,7 +3,7 @@ import Plot from 'react-plotly.js';
 //https://plot.ly/javascript/react/
 //https://www.alphavantage.co/documentation/
 
-class ChartOne extends React.Component {
+class ChartTwo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ class ChartOne extends React.Component {
     const This = this;
     console.log(This);
     const API_KEY = 'KUJ2BOOFVHWXUA63';
-    let StockSymbol = 'MSFT';
+    let StockSymbol = 'PFE';
     let API = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let ChartXFunction = [];
     let ChartYFunction = [];
@@ -52,7 +52,7 @@ class ChartOne extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock: Microsoft Corporation</h1>
+        <h1>Stock: Bayer </h1>
         <Plot
           data={[
             {
@@ -70,4 +70,4 @@ class ChartOne extends React.Component {
   }
 }
 
-export default ChartOne;
+export default ChartTwo;
