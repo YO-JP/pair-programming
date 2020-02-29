@@ -25,7 +25,7 @@ class Main extends React.Component {
               stockFive: [],
               totalOne: 0,
               Profit:0,
-              Cash:10,
+              Cash:20,
               countOne: 0,
               countTwo: 0,
               countThree:0,

@@ -52,7 +52,7 @@ class ChartOne extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock: Microsoft Corporation</h1>
+        <h1>Stock A: Microsoft Corporation</h1>
         <Plot
           data={[
             {

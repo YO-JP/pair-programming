@@ -50,7 +50,7 @@ class ChartThree extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock:Gap Inc</h1>
+        <h1>Stock C:Gap Inc</h1>
         <Plot
           data={[
             {

@@ -7,9 +7,9 @@ class Result extends React.Component {
             <div className = "result">
                 <h2>RESULT...</h2>
                 <div className="result__div">
-                <h4>Profit</h4>
+                <h4 className='result__title'>Profit</h4>
                 <p>{Math.floor(this.props.profit)}</p>
-                <h4>Cash</h4>
+                <h4 className='result__title'>Cash</h4>
                 <p>{Math.floor(this.props.cash)}</p>
                 </div>
             </div>

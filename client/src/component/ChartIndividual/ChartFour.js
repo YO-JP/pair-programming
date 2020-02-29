@@ -50,7 +50,7 @@ class ChartFour extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock: Exxon Mobil Corporation</h1>
+        <h1>Stock D: Exxon Mobil Corporation</h1>
         <Plot
           data={[
             {

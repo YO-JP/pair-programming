@@ -52,7 +52,7 @@ class ChartTwo extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock: Bayer </h1>
+        <h1>Stock B: Bayer </h1>
         <Plot
           data={[
             {

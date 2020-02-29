@@ -50,7 +50,7 @@ class ChartFive extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock: Bank of America</h1>
+        <h1>Stock E: Bank of America</h1>
         <Plot
           data={[
             {
