@@ -1,12 +1,19 @@
 .result{
     display:flex;
     flex-direction:column;
+    background-color:  #ADEFD1FF;
+    width:20rem;
+    border-radius: 5px;
+    margin:1rem;
+    &__bigTitle{
+        margin-top:1rem;
+    }
     &__div{
         display:flex;
         flex-direction: row;
     }
     &__title{ 
-        padding-right: 1.5rem;
+        padding: 1.5rem;
         }
     
 }

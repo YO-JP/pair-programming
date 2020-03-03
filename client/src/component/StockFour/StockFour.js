@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './StockFour.scss'
+import '../../Styles/stock.scss'
 
 export class StockFour extends Component{
     state ={
@@ -14,14 +14,14 @@ export class StockFour extends Component{
         console.log(Len)
         return(
 
-            <section className="stock_container">
+            <section className="stock">
             <h2>STOCK D</h2>
             <h5>Industry:Petrochemicals</h5>
-            <p> The Oil Polluting Act of 1990 was  created due to this company's negligence.</p>
-            <form onSubmit={this.props.onSubmit}> 
+            <p className="stock__description"> The Oil Polluting Act of 1990 was  created due to this company's negligence.</p>
+            <form className='stock__form' onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockFour[111].date}</p>
              <p>{this.props.stockFour[111].close}</p>
-             <button type="submit">BUY</button>
+             <button className = "stock__button" type="submit">BUY</button>
              <p>Count</p>
              <p>{this.props.countFour}</p>
             </form>
@@ -33,9 +33,9 @@ export class StockFour extends Component{
                     <>
                     <p>{this.props.stockFour[Len].date}</p>
                     <p>{this.props.stockFour[Len].close}</p>
+                    <button className = "stock__button" onClick={this.props.handleAlternate}>SELL</button>
                     </>
                     : null}
-            <button onClick={this.props.handleAlternate}>SELL</button>
             </section>
            
         

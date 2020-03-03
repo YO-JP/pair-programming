@@ -3,11 +3,15 @@
 @import'../Styles/_variables';
 
 .main{
-    display: flex;
-    background-color: $green;
-    color:$blue;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:0;
+    margin:0;
     &__div{
         display:flex;
+        margin:1rem;
+        flex-direction: row;
         justify-content: space-evenly;
         width:100%;
     }
@@ -16,3 +20,4 @@
         justify-content: center;
     }
 }
+

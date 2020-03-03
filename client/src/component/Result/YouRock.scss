@@ -1,3 +1,14 @@
 .yourock{
-
+    &__button{
+        background-color:#00203FFF;
+        padding:1rem;
+        width:18rem;
+        color:white;
+        border-color:goldenrod;
+        border-radius: 5px;
+    }
+    &__paragraph{
+        font-size: 1.5rem;
+        color:red;
+    }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Plot from 'react-plotly.js';
 //https://plot.ly/javascript/react/
 //https://www.alphavantage.co/documentation/
+import './ChartIndividual.scss'
 
 class ChartOne extends React.Component {
   constructor(props) {
@@ -52,7 +53,7 @@ class ChartOne extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock A: Microsoft Corporation</h1>
+        <h1 className='chartIndividual__title'>Stock A: Microsoft Corporation</h1>
         <Plot
           data={[
             {

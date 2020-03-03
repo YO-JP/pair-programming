@@ -47,6 +47,7 @@ class Main extends React.Component {
         
     
     handleAlternate = event => {
+        if (this.state.countOne){
         event.preventDefault ();
         this.setState({Profit: this.state.Profit + this.state.stockOne[7669].close-this.state.stockOne[111].close} , () => {
             console.log(this.state.Profit)}
@@ -56,6 +57,9 @@ class Main extends React.Component {
         )
         this.setState({Cash: this.state.Cash + this.state.stockOne[7669].close})
         this.setState({countOne:this.state.countOne-1})
+        } else {
+            alert('No more to sell')
+        }
     }
 
     handleSubmitTwo = event => {
@@ -71,6 +75,7 @@ class Main extends React.Component {
     
     handleAlternateTwo = event => {
         event.preventDefault ();
+        if (this.state.countTwo >0){
         this.setState({Profit: this.state.Profit + this.state.stockTwo[7669].close-this.state.stockTwo[111].close} , () => {
             console.log(this.state.Profit)}
         )
@@ -79,6 +84,9 @@ class Main extends React.Component {
         )
         this.setState({Cash: this.state.Cash + this.state.stockTwo[7669].close})
         this.setState({countTwo:this.state.countTwo-1})
+        } else {
+            alert ('No more to sell')
+        }
     }
 
     handleSubmitThree = event => {
@@ -94,6 +102,7 @@ class Main extends React.Component {
     
     handleAlternateThree = event => {
         event.preventDefault ();
+        if (this.state.countThree >0){
         this.setState({Profit: this.state.Profit + this.state.stockThree[7669].close-this.state.stockThree[111].close} , () => {
             console.log(this.state.Profit)}
         )
@@ -102,6 +111,9 @@ class Main extends React.Component {
         )
         this.setState({Cash: this.state.Cash + this.state.stockThree[7669].close})
         this.setState({countThree:this.state.countThree-1})
+        } else {
+            alert ('No more to sell')
+        }
     }
 
     handleSubmitFour = event => {
@@ -117,6 +129,7 @@ class Main extends React.Component {
     
     handleAlternateFour = event => {
         event.preventDefault ();
+        if (this.state.countFour >0){
         this.setState({Profit: this.state.Profit + this.state.stockFour[7669].close-this.state.stockFour[111].close} , () => {
             console.log(this.state.Profit)}
         )
@@ -125,6 +138,9 @@ class Main extends React.Component {
         )
         this.setState({Cash: this.state.Cash + this.state.stockFour[7669].close})
         this.setState({countFour:this.state.countFour-1})
+        } else {
+            alert ('No more to sell')
+        }
     }
 
     handleSubmitFive = event => {
@@ -140,6 +156,7 @@ class Main extends React.Component {
     
     handleAlternateFive = event => {
         event.preventDefault ();
+        if (this.state.countFive>0){
         this.setState({Profit: this.state.Profit + this.state.stockFive[7669].close-this.state.stockFive[111].close} , () => {
             console.log(this.state.Profit)}
         )
@@ -148,6 +165,9 @@ class Main extends React.Component {
         )
         this.setState({Cash: this.state.Cash + this.state.stockFive[7669].close})
         this.setState({countFive:this.state.countFive-1})
+        } else{
+            alert ('No more to sell')
+        }
     }
     componentDidMount(){
         axios.get('https://financialmodelingprep.com/api/v3/historical-price-full/AAPL?serietype=line')
@@ -179,8 +199,12 @@ class Main extends React.Component {
     render() {
         console.log(this.state.stockOne)
         return (
-            <>
+            <section className="main">
                 <Chart />
+                <p>You are a 10 YEAR OLD kid in YEAR 2000. </p>
+                <p>Your loving parents gave you $20 to invest in the Stock Market.</p>
+                <p>You will be able to sell your portfolio once 20 years from now when you hit 30 YEARS OLD.</p> 
+                <p>Choose wisely.</p>
                 <div className = "main__div">
                 <StockOne stockOne={this.state.stockOne} onSubmit={this.handleSubmit} handleAlternate={this.handleAlternate} countOne={this.state.countOne}/>
                 <StockTwo stockTwo={this.state.stockTwo} onSubmit={this.handleSubmitTwo} handleAlternate={this.handleAlternateTwo} countTwo={this.state.countTwo}/>
@@ -193,7 +217,7 @@ class Main extends React.Component {
                 <Result profit={this.state.Profit} cash={this.state.Cash}/>
                 </div>
                 <YouRock profit={this.state.Profit} />
-            </>
+            </section>
         )
     }
 }

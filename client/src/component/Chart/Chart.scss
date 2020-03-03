@@ -1,14 +1,14 @@
 
 .chart{
     text-align: center;
-    background-color:  #ADEFD1FF;
-
     &__button{
         background-color:#00203FFF;
         border-color: goldenrod;
         color:white;
-        width: 5rem;
-        height: 2rem;
-        display: inline-block;
+        width: 10rem;
+        text-align:center;
+        padding:1rem;
+        display: flex;
+        border-radius:5px;
     }
 }

@@ -5,7 +5,7 @@ class Result extends React.Component {
     render(){
         return (
             <div className = "result">
-                <h2>RESULT...</h2>
+                <h2 className="result__bigTitle">RESULT...</h2>
                 <div className="result__div">
                 <h4 className='result__title'>Profit</h4>
                 <p>{Math.floor(this.props.profit)}</p>

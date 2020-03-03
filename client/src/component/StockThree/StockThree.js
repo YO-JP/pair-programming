@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './StockThree.scss'
+import '../../Styles/stock.scss'
 
 
 export class StockThree extends Component{
@@ -15,14 +15,14 @@ export class StockThree extends Component{
         console.log(Len)
         return(
 
-            <section className="stock_container">
+            <section className="stock">
             <h2>STOCK C</h2>
-            <h5>Industry:Appearl</h5>
-            <p>This clothing company has been credited with fueling the turtle neck craze of the late 80's/early 90's.</p>
-            <form onSubmit={this.props.onSubmit}> 
+            <h5>Industry:Apparel</h5>
+            <p className='stock__description'>This clothing company has been credited with fueling the turtle neck craze of the late 80's/early 90's.</p>
+            <form className='stock__form' onSubmit={this.props.onSubmit}> 
              <p>{this.props.stockThree[111].date}</p>
              <p>{this.props.stockThree[111].close}</p>
-             <button type="submit">BUY</button>
+             <button className = "stock__button" type="submit">BUY</button>
              <p>Count</p>
              <p>{this.props.countThree}</p>
             </form>
@@ -34,9 +34,9 @@ export class StockThree extends Component{
                     <>
                     <p>{this.props.stockThree[Len].date}</p>
                     <p>{this.props.stockThree[Len].close}</p>
+                    <button className = "stock__button" onClick={this.props.handleAlternate}>SELL</button>
                     </>
                     : null}
-            <button onClick={this.props.handleAlternate}>SELL</button>
             </section>
            
         

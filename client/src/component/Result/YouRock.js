@@ -12,14 +12,20 @@ class YouRock extends React.Component {
     render(){
         return (
             <div className = "yourock">
-            <button className = "stock__button" onClick={()=>{
+            <button className = "yourock__button" onClick={()=>{
                     this.setState({visible:!this.state.visible});
-                }}>CLICK ME!</button>
+                }}>COMPARE YOUR RESULT TO AVG</button>
                 {this.state.visible ? 
                     <>
                     {this.props.profit >1500 ?
-                    <p>You are a stock market wizard! Invest NOW!</p> :
-                    <p>You are a horrible investor! Stick to Wealthsimple!</p>
+                    <>
+                    <p className="yourock__paragraph">You are a Stock Market Wizard! Invest NOW!</p> 
+                    <p>Avg profit for HOT STOCK GAME IS 1500.</p>
+                    </>:
+                    <>
+                    <p className="yourock__paragraph">You are a HORRIBLE investor! Stick to Wealthsimple!</p>
+                    <p>Avg profit for HOT STOCK GAME IS 1500.</p>
+                    </>
                     }
                     </>
                     :null}

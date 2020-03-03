@@ -1,0 +1,28 @@
+@import './mixin.scss';
+
+.stock{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    flex: 0 0 18%;
+    background-color: $blue;
+    padding:0.2rem;
+    border-radius: 4px;
+    &__description{
+        display:flex;
+        width:100%;
+        height:7rem;
+        align-items:center;
+    }
+    &__form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button{
+        padding:0.5rem;
+        color:white;
+        background-color:$green;
+    }
+    
+}

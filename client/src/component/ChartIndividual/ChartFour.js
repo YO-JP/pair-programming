@@ -1,6 +1,6 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-
+import './ChartIndividual.scss'
 class ChartFour extends React.Component {
   constructor(props) {
     super(props);
@@ -50,7 +50,7 @@ class ChartFour extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stock D: Exxon Mobil Corporation</h1>
+        <h1 className='chartIndividual__title'>Stock D: Exxon Mobil Corporation</h1>
         <Plot
           data={[
             {
