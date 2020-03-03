@@ -1,4 +1,7 @@
 .yourock{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:2rem;
     &__button{
         background-color:#00203FFF;
         padding:1rem;
@@ -10,5 +13,6 @@
     &__paragraph{
         font-size: 1.5rem;
         color:red;
+        font-weight: 900;
     }
 }

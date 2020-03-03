@@ -201,10 +201,10 @@ class Main extends React.Component {
         return (
             <section className="main">
                 <Chart />
-                <p>You are a 10 YEAR OLD kid in YEAR 2000. </p>
-                <p>Your loving parents gave you $20 to invest in the Stock Market.</p>
-                <p>You will be able to sell your portfolio once 20 years from now when you hit 30 YEARS OLD.</p> 
-                <p>Choose wisely.</p>
+                <p className='main__para'>You are a 10 YEAR OLD kid in YEAR 2000. </p>
+                <p className='main__para'>Your loving parents gave you $20 to invest in the Stock Market.</p>
+                <p className='main__para'>You will be able to sell your portfolio once 20 years from now when you hit 30 YEARS OLD.</p> 
+                <p className='main__para'>Choose wisely.</p>
                 <div className = "main__div">
                 <StockOne stockOne={this.state.stockOne} onSubmit={this.handleSubmit} handleAlternate={this.handleAlternate} countOne={this.state.countOne}/>
                 <StockTwo stockTwo={this.state.stockTwo} onSubmit={this.handleSubmitTwo} handleAlternate={this.handleAlternateTwo} countTwo={this.state.countTwo}/>

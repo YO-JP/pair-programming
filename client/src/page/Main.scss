@@ -8,6 +8,11 @@
     align-items: center;
     padding:0;
     margin:0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnq1olSWKoukRiWz7J_KegxSHQE6MgqVmN7kpt_O2CRzXL1QY7');
+    background-size:cover;
+    &__para{
+        font-weight: bold;
+    }
     &__div{
         display:flex;
         margin:1rem;
